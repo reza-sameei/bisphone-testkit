@@ -9,7 +9,7 @@ import org.scalatest.matchers._
 /**
   * @author Reza Samei <reza.samei.g@gmail.com>
   */
-class AkkaTest(actorsys: ActorSystem)
+class AkkaFlatSpec(actorsys: ActorSystem)
   extends TestKit(actorsys)
   with ImplicitSender
   with FlatSpecLike
