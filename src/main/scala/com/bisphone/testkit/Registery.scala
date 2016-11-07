@@ -46,6 +46,6 @@ trait Registery { self =>
       holder((tag, name)) = new SimpleHolder(factory).asInstanceOf[Holder[T]]
    }
 
-   def get[T](name: String)(implicit tag: ClassTag[T]) = holder((tag, name))
+   def get[T](name: String)(implicit tag: ClassTag[T]) = holder((tag, name)).get(self)
 
 }
