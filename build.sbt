@@ -2,7 +2,7 @@
 
 organization := "com.bisphone"
 
-name := "beta-testkit"
+name := "testkit"
 
 version := "0.2.1"
 
