@@ -4,7 +4,7 @@ organization := "com.bisphone"
 
 name := "testkit"
 
-version := "0.3.0"
+version := "0.4.0"
 
 scalaVersion := "2.11.8"
 
