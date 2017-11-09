@@ -4,13 +4,17 @@ organization := "com.bisphone"
 
 name := "testkit"
 
-version := "0.4.0"
+version := "0.4.1-SNAPSHOT"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.11.11"
+
+crossScalaVersions := Seq("2.11.11", "2.12.4")
+
+val akkaVersion = "2.5.6"
 
 libraryDependencies ++= Seq(
-  "com.bisphone" %% "std" % "0.8.3",
-  "org.scalatest" %% "scalatest" % "2.2.6",
-  "com.typesafe.akka" %% "akka-testkit" % "2.4.4",
-  "com.typesafe.akka" %% "akka-stream-testkit" % "2.4.4"
+        "com.bisphone" %% "std" % "0.12.0-SNAPSHOT"
+    ,   "org.scalatest" %% "scalatest" % "3.0.4"
+    ,   "com.typesafe.akka" %% "akka-testkit" % akkaVersion
+    ,   "com.typesafe.akka" %% "akka-stream-testkit" % akkaVersion
 )
